@@ -15,6 +15,7 @@ const toolkit = createSlice({
         },
         newUser(state, action) {
             let allUsers = action.payload;
+            state.users = []
             allUsers.forEach(item => {
                 state.users.push(item)
             })
